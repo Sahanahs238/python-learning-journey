@@ -1,0 +1,8 @@
+sentence = input("Enter a sentence: ")
+print(len(sentence))
+print(sentence.count("a"))
+print(sentence.count("e"))
+print(sentence.count("i"))
+print(sentence.count("o"))
+print(sentence.count("u"))
+print(sentence.count(" "))

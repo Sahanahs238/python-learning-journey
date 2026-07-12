@@ -1,0 +1,7 @@
+name = input("Enter your name: ")
+print(name.upper())
+sentence = input("Enter a sentence: ")
+print(len(sentence))
+print(sentence[0:6])
+print(sentence.count("a"))
+print(f"Hello, {name}!")

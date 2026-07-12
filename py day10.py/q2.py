@@ -1,0 +1,6 @@
+hi = input("Enter your name: ")
+print(hi)
+print(hi[::-1])
+print(len(hi))
+print(hi.upper())
+print(hi.lower())

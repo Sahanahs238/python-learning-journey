@@ -1,0 +1,6 @@
+name = input("What is your name? ")
+print("Hello, " + name + "!")
+print(len(name))
+print(name.upper())
+print(name[0])
+print(name[-1])
