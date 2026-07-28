@@ -1,0 +1,39 @@
+while True:
+    print("\n===== Student Management System =====")
+    print("1. Add Student")
+    print("2. View Students")
+    print("3. Exit")
+
+    choice = input("Choose (1, 2, 3): ")
+
+    if choice == "1":
+        name = input("Enter student name: ")
+
+        file = open("students.txt", "a")
+        file.write(name + "\n")
+        file.close()
+
+        print("✅ Student added successfully!")
+
+    elif choice == "2":
+        try:
+            file = open("students.txt", "r")
+            content = file.read()
+
+            if content == "":
+                print("No students found!")
+            else:
+                print("\nStudents:")
+                print(content)
+
+            file.close()
+
+        except FileNotFoundError:
+            print("No students found!")
+
+    elif choice == "3":
+        print("👋 Goodbye!")
+        break
+
+    else:
+        print("❌ Invalid choice. Please try again.")
