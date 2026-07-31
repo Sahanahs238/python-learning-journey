@@ -55,7 +55,7 @@ while True:
                     found = True
                     break
         if not found:
-            print("Room already bookes!")
+            print("Room already booked!")
     elif choice == "5":
         roomn = int(input("Enter room number to do checkout:"))
         found = False
